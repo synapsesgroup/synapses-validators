@@ -19,50 +19,50 @@ Go to your models, and set your validators.
 
 ### CPF
 
-'''ruby
+```ruby
 validates :cpf, :presence => true, :uniqueness => true, :cpf => true, :if => :is_person_br?
-'''
+```
 
 Or
 
-'''ruby
+```ruby
 act_as_cpf :cpf
-'''
+```
 
 ### CNPJ
 
-'''ruby
+```ruby
 validates :cnpj, :presence => true, :uniqueness => true, :cnpj => true, :if => :is_business_br?
-'''
+```
 
 Or
 
-'''ruby
+```ruby
 act_as_cnpj :cpf
-'''
+```
 
 ### Email
 
-'''ruby
+```ruby
   validates :email,
             :presence => true,
             :uniqueness => true,
             :length => {:within => 5..50},
             :email_format => true
-'''
+```
 
 
 ### I18n
 
 The error messages is localized. So, you must have this lines in your locale files:
 
-'''ruby
+```ruby
   activerecord:
     errors:
       messages:
         invalid: inválido
         not_formatted: não está no formato correto
-'''
+```
 
 ### TODO
 
