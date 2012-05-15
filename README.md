@@ -11,9 +11,9 @@ Based on Brazilian Rails (https://github.com/tapajos/brazilian-rails)
 
 Include "synapses-validators" in yor gemfile.
 
-'''ruby
+```ruby
 gem 'synapses-validators'
-''
+```
 
 Go to your models, and set your validators.
 
